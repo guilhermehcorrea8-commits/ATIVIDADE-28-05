@@ -7,7 +7,7 @@ namespace aula_28._05.models
 {
     public class Calculadora : ICalculadora
     {
-        public string Nome { get; set; }
+        public string Nome { get; set; } = string.Empty;
 
         public double Somar(int a, int b)
         {
