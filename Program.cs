@@ -328,19 +328,18 @@ Console.WriteLine(
     "===== NOTIFICAÇÕES =====");
 
 List<UsuarioSistema> usuarios =
-new List<UsuarioSistema>()
-{
-    new UsuarioSistema(
+[
+    new(
         "Carlos",
         "54999999999"),
 
     new UsuarioSistema(
         "Ana",
         "54988888888")
-};
+];
 
-Interfaces.INotificacao whatsapp =
-    (Interfaces.INotificacao)new WhatsApp();
+Notificacoes.INotificacao whatsapp =
+    new Notificacoes.WhatsApp();
 
 foreach (var usuarioSistema
     in usuarios)
@@ -385,8 +384,10 @@ Console.WriteLine(
     $"{mago.Nome}: {mago.Vida}"
 );
 
-((Interfaces.IHabilidadeEspecial)
-guerreiro).UsarHabilidade();
+RPG.IHabilidadeEspecial habilidade =
+    (RPG.IHabilidadeEspecial)guerreiro;
+
+habilidade.UsarHabilidade();
 
 Console.WriteLine();
 
