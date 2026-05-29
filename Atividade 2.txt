@@ -1,0 +1,387 @@
+==============================
+EXERCÍCIOS — INTERFACE, CLASSE ABSTRATA E LÓGICA EM C#
+==============================
+
+1- SISTEMA DE VEÍCULOS
+------------------------------
+
+Crie uma classe abstrata chamada Veiculo.
+
+Ela deve possuir:
+- Marca
+- Modelo
+- VelocidadeAtual
+
+Métodos:
+- Acelerar()
+- Frear()
+
+Depois crie:
+- Carro
+- Moto
+
+Regras:
+- O carro acelera +10 por vez.
+- A moto acelera +15 por vez.
+- Nenhuma velocidade pode ficar negativa.
+
+Crie uma interface chamada IBuzina:
+- void Buzinar();
+
+Implemente a interface nas duas classes.
+
+No Main:
+- Crie um carro e uma moto
+- Faça acelerar, frear e buzinar
+- Mostre os resultados no console
+
+
+==============================
+
+2- FUNCIONÁRIOS DA EMPRESA
+------------------------------
+
+Crie uma classe abstrata chamada Funcionario.
+
+Atributos:
+- Nome
+- SalarioBase
+
+Método abstrato:
+- CalcularSalario()
+
+Crie as classes:
+- Gerente
+- Desenvolvedor
+- Estagiario
+
+Regras:
+- Gerente recebe bônus de 20%
+- Desenvolvedor recebe bônus de 10%
+- Estagiário não recebe bônus
+
+Crie uma interface:
+- IRelatorio
+
+Método:
+- void ExibirRelatorio();
+
+Todas as classes devem implementar.
+
+No Main:
+- Cadastre funcionários
+- Exiba salário final
+- Exiba relatório
+
+
+==============================
+
+3- SISTEMA DE PAGAMENTO
+------------------------------
+
+Crie uma interface:
+- IPagamento
+
+Método:
+- void Pagar(double valor);
+
+Crie:
+- CartaoCredito
+- Pix
+- Boleto
+
+Cada forma de pagamento deve mostrar uma mensagem diferente.
+
+Crie uma classe abstrata:
+- Pedido
+
+Atributos:
+- Numero
+- ValorTotal
+
+Método abstrato:
+- FinalizarPedido()
+
+Depois crie:
+- PedidoOnline
+- PedidoLoja
+
+No Main:
+- Crie pedidos
+- Escolha formas de pagamento
+- Finalize os pedidos
+
+
+==============================
+
+4- ANIMAIS
+------------------------------
+
+Crie uma classe abstrata:
+- Animal
+
+Atributos:
+- Nome
+- Idade
+
+Método abstrato:
+- EmitirSom()
+
+Crie:
+- Cachorro
+- Gato
+- Vaca
+
+Crie uma interface:
+- IComportamento
+
+Métodos:
+- Comer()
+- Dormir()
+
+Implemente tudo.
+
+No Main:
+- Crie os animais
+- Faça emitir som
+- Comer
+- Dormir
+
+
+==============================
+
+5- SISTEMA DE LOGIN
+------------------------------
+
+Crie uma interface:
+- IAutenticacao
+
+Método:
+- bool Login(string usuario, string senha);
+
+Crie:
+- Admin
+- UsuarioComum
+
+Regras:
+- Admin possui acesso total
+- Usuário comum possui acesso limitado
+
+Crie uma classe abstrata:
+- PessoaSistema
+
+Atributos:
+- Nome
+- Email
+
+Método abstrato:
+- ExibirPermissao()
+
+No Main:
+- Faça login
+- Mostre permissões
+
+
+==============================
+DESAFIO DE LÓGICA + OOP
+==============================
+
+6- SISTEMA DE FORMAS GEOMÉTRICAS
+------------------------------
+
+Crie uma classe abstrata:
+- Forma
+
+Método abstrato:
+- CalcularArea()
+
+Crie:
+- Quadrado
+- Retangulo
+- Circulo
+
+Crie uma interface:
+- IDesenho
+
+Método:
+- Desenhar()
+
+Regras:
+- O sistema deve armazenar várias formas em uma lista
+- O usuário escolhe qual forma criar
+- O programa calcula a área total de todas as formas
+
+DESAFIO:
+- Mostrar qual forma possui maior área
+
+
+==============================
+
+7- SISTEMA DE NOTIFICAÇÕES
+------------------------------
+
+Crie uma interface:
+- INotificacao
+
+Método:
+- EnviarMensagem(string mensagem);
+
+Crie:
+- Email
+- SMS
+- WhatsApp
+
+Crie uma classe abstrata:
+- Usuario
+
+Atributos:
+- Nome
+- Telefone
+
+Método abstrato:
+- ExibirDados()
+
+No Main:
+- Cadastre usuários
+- Escolha tipo de notificação
+- Envie mensagens
+
+
+==============================
+
+8- JOGO RPG
+------------------------------
+
+Crie uma classe abstrata:
+- Personagem
+
+Atributos:
+- Nome
+- Vida
+- Ataque
+
+Método abstrato:
+- Atacar()
+
+Crie:
+- Guerreiro
+- Mago
+- Arqueiro
+
+Crie uma interface:
+- IHabilidadeEspecial
+
+Método:
+- UsarHabilidade();
+
+Regras:
+- Guerreiro causa dano físico
+- Mago lança magia
+- Arqueiro ataca à distância
+
+DESAFIO:
+- Criar batalha entre personagens
+
+
+==============================
+
+9- SISTEMA BANCÁRIO
+------------------------------
+
+Crie uma classe abstrata:
+- Conta
+
+Atributos:
+- Numero
+- Saldo
+
+Métodos:
+- Depositar()
+- Sacar()
+
+Método abstrato:
+- CalcularTaxa()
+
+Crie:
+- ContaCorrente
+- ContaPoupanca
+
+Crie interface:
+- ITransferencia
+
+Método:
+- Transferir()
+
+DESAFIO:
+- Não permitir saque maior que saldo
+- Mostrar extrato
+
+
+==============================
+
+10- DESAFIO FINAL — MINI UBER
+------------------------------
+
+Crie uma classe abstrata:
+- VeiculoAplicativo
+
+Atributos:
+- Placa
+- Modelo
+- QuilometrosRodados
+
+Método abstrato:
+- CalcularCorrida()
+
+Crie:
+- CarroUber
+- MotoUber
+
+Crie interface:
+- ILocalizacao
+
+Método:
+- AtualizarLocalizacao()
+
+REGRAS:
+- Carro cobra R$ 2,50 por km
+- Moto cobra R$ 1,50 por km
+
+DESAFIOS:
+- Calcular total arrecadado
+- Mostrar veículo com mais corridas
+- Criar menu interativo
+- Armazenar corridas em lista
+
+
+==============================
+DESAFIO EXTRA (NÍVEL DIFÍCIL)
+==============================
+
+11- SISTEMA DE PLUGINS
+------------------------------
+
+Crie uma interface:
+- IPlugin
+
+Métodos:
+- Executar()
+- Encerrar()
+
+Crie plugins:
+- PluginAudio
+- PluginVideo
+- PluginSeguranca
+
+Crie uma classe:
+- Sistema
+
+O sistema deve:
+- Carregar plugins em uma lista
+- Executar todos
+- Encerrar todos
+
+DESAFIO:
+- Usar List<IPlugin>
+- Percorrer com foreach
+- Mostrar polimorfismo funcionando

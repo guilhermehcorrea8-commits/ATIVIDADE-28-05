@@ -1,0 +1,14 @@
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.AssemblyInfoInputs.cache
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.AssemblyInfo.cs
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.csproj.CoreCompileInputs.cache
+C:\Users\65138624\Documents\aula 28.05\bin\Debug\net8.0\aula 28.05.exe
+C:\Users\65138624\Documents\aula 28.05\bin\Debug\net8.0\aula 28.05.deps.json
+C:\Users\65138624\Documents\aula 28.05\bin\Debug\net8.0\aula 28.05.runtimeconfig.json
+C:\Users\65138624\Documents\aula 28.05\bin\Debug\net8.0\aula 28.05.dll
+C:\Users\65138624\Documents\aula 28.05\bin\Debug\net8.0\aula 28.05.pdb
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.dll
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\refint\aula 28.05.dll
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.pdb
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\aula 28.05.genruntimeconfig.cache
+C:\Users\65138624\Documents\aula 28.05\obj\Debug\net8.0\ref\aula 28.05.dll
